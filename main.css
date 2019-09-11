@@ -24,10 +24,19 @@ header {
   width: 100%;
 }
 
+section {
+  background-color: black;
+  /* Feedback: Your containers are constrained by centering via margin.
+  Your styles (in this instance, background-color) won't apply to the space created by margin.
+  But since they're all within sections that take up the full page width, we can just apply background-color on those sections.
+  Resource for more info: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model */
+}
+
 .container {
   margin-bottom: 0;
   min-height: 2.5rem;
-  height: 5vh;
+  /* height: 5vh;  Feedback: Setting a specific height on the containers caused the content to be constrained as well.  
+  Without setting a height, the container's height just grows to the size of the content. */
   vertical-align: center;
   background: black;
 }
@@ -50,13 +59,15 @@ TO DO: fix font and add hover effect for .navbar ul li a */
   border-radius: 6px;
 }
 
-.jumbotron {
+#home .jumbotron {
   background-image: url("./images/blackeyedsusans.jpg");
   background-color: black;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  margin-bottom: 0;
+  margin-bottom: 0; /* Feedback: Without higher CSS specificity, when your styles clash with bootstrap's styles, 
+  bootstrap's styles will be the accepted ones since they load after yours. 
+  Resource: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity*/
   min-height: 75vh;
   border-radius: 0 !important;
 }
