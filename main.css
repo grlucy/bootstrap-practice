@@ -8,6 +8,14 @@
   margin-top: 2.5rem;
 }
 
+body {
+  background: black;
+}
+
+p {
+  /* TO DO: style paragraphs */
+}
+
 header {
   background: black;
   position: fixed;
@@ -76,13 +84,7 @@ TO DO: fix font and add hover effect for .navbar ul li a */
   text-align: center;
 }
 
-.col-sm-12 {
-  background: black;
-  padding: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-.col-sm-12 h2 {
+.knockout-head h2 {
   background: white;
   color: black;
   display: inline;
@@ -91,6 +93,12 @@ TO DO: fix font and add hover effect for .navbar ul li a */
 }
 /* TO DO: change section header font */
 
+.col-sm-12 {
+  background: black;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 .col-sm-4 {
   background: black;
   padding: 0.6rem;
@@ -99,6 +107,12 @@ TO DO: fix font and add hover effect for .navbar ul li a */
 }
 .col-sm-4 img {
   width: 100%;
+}
+
+.col-sm-5 img {
+  width: 100%;
+  border: 2px dashed turquoise;
+  /* TO DO: Remove border */
 }
 .col-sm-4 p {
   padding: 1rem 0;
