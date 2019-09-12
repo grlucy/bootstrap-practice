@@ -26,17 +26,15 @@ header {
 
 section {
   background-color: black;
-  /* Feedback: Your containers are constrained by centering via margin.
-  Your styles (in this instance, background-color) won't apply to the space created by margin.
-  But since they're all within sections that take up the full page width, we can just apply background-color on those sections.
-  Resource for more info: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model */
+}
+
+.stickynav {
+  height: 5vh;
+  min-height: 2.6rem;
 }
 
 .container {
   margin-bottom: 0;
-  min-height: 2.5rem;
-  /* height: 5vh;  Feedback: Setting a specific height on the containers caused the content to be constrained as well.  
-  Without setting a height, the container's height just grows to the size of the content. */
   vertical-align: center;
   background: black;
 }
@@ -53,10 +51,10 @@ TO DO: fix font and add hover effect for .navbar ul li a */
   float: right;
   background: var(--Dkgreen);
   color: white;
+  border-radius: 6px;
   padding: 0.15rem 0.7rem;
   position: relative;
   top: -0.4rem;
-  border-radius: 6px;
 }
 
 #home .jumbotron {
@@ -65,9 +63,7 @@ TO DO: fix font and add hover effect for .navbar ul li a */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  margin-bottom: 0; /* Feedback: Without higher CSS specificity, when your styles clash with bootstrap's styles, 
-  bootstrap's styles will be the accepted ones since they load after yours. 
-  Resource: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity*/
+  margin-bottom: 0;
   min-height: 75vh;
   border-radius: 0 !important;
 }
@@ -95,6 +91,9 @@ TO DO: fix font and add hover effect for .navbar ul li a */
   text-align: center;
 }
 
+.knockout-head {
+  margin-bottom: 1rem;
+}
 .knockout-head h2 {
   background: white;
   color: black;
@@ -107,6 +106,7 @@ TO DO: fix font and add hover effect for .navbar ul li a */
 .col-sm-12 {
   background: black;
   padding: 1rem;
+  margin-top: 3rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -122,9 +122,59 @@ TO DO: fix font and add hover effect for .navbar ul li a */
 
 .col-sm-5 img {
   width: 100%;
-  border: 2px dashed turquoise;
-  /* TO DO: Remove border */
 }
 .col-sm-4 p {
   padding: 1rem 0;
+}
+
+iframe {
+  margin-bottom: 1rem;
+}
+
+.contacttbl {
+  width: 100%;
+  text-align: left;
+}
+.contacttbl input {
+  width: 100%;
+}
+.contact-label {
+  width: 7.5rem;
+}
+.contact-msg textarea {
+  width: 100%;
+}
+.clickme {
+  margin-top: 0.6rem;
+  background: var(--Dkgreen);
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  padding-bottom: 0.15rem;
+}
+
+footer {
+  background-color: black;
+}
+#social {
+  margin-top: 5rem;
+  padding-top: 0.5rem;
+  text-align: left;
+  border-top: 2px solid var(--Dkgreen);
+}
+#social img {
+  width: 2rem;
+  height: 2rem;
+  fill: white;
+}
+#copyright {
+  margin-top: 5rem;
+  padding-top: 0.5rem;
+  text-align: right;
+  border-top: 2px solid var(--Dkgreen);
+}
+.svgsocial {
+  fill: white;
+  height: 1.6rem;
+  margin: 0 0.2rem;
 }
