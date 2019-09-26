@@ -2,6 +2,7 @@
   background: black;
   margin: 0;
   --Dkgreen: rgb(45, 87, 67);
+  --Goldenrod: #ffc501;
 }
 
 #home {
@@ -13,7 +14,9 @@ body {
 }
 
 p {
-  /* TO DO: style paragraphs */
+  font-size: 0.75rem;
+  text-align: justify;
+  font-family: "Raleway", sans-serif;
 }
 
 header {
@@ -42,10 +45,20 @@ section {
 .navbar ul li {
   display: inline;
   padding: 0.75rem;
-  color: white;
 }
-/* TO DO: add a media query to fix navbar on phone screens 
-TO DO: fix font and add hover effect for .navbar ul li a */
+/* TO DO: add a media query to fix navbar on phone screens  */
+.navbar ul li a {
+  color: var(--Goldenrod);
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.navbar ul li a:hover {
+  border-top: 2px solid var(--Goldenrod);
+  text-decoration: none;
+}
+.navbar ul li a:visited {
+  color: var(--Goldenrod);
+}
 
 .donate-btn {
   float: right;
@@ -58,7 +71,7 @@ TO DO: fix font and add hover effect for .navbar ul li a */
 }
 
 #home .jumbotron {
-  background-image: url("./images/blackeyedsusans.jpg");
+  background-image: url("./images/bee-a-hero.jpg");
   background-color: black;
   background-size: cover;
   background-position: center;
@@ -66,6 +79,9 @@ TO DO: fix font and add hover effect for .navbar ul li a */
   margin-bottom: 0;
   min-height: 75vh;
   border-radius: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .knockout {
@@ -82,8 +98,8 @@ TO DO: fix font and add hover effect for .navbar ul li a */
   margin: 1rem 1rem;
   font-size: 20vh;
   mix-blend-mode: screen;
+  font-family: "Unlock", cursive;
 }
-/* TO DO: find a cool font for .knockout h1 */
 
 .row {
   background: black;
@@ -99,9 +115,9 @@ TO DO: fix font and add hover effect for .navbar ul li a */
   color: black;
   display: inline;
   padding: 0 0.4rem;
-  font-weight: 900;
+  font-family: "Unlock", cursive;
+  font-size: 2.6rem;
 }
-/* TO DO: change section header font */
 
 .col-sm-12 {
   background: black;
@@ -123,14 +139,37 @@ TO DO: fix font and add hover effect for .navbar ul li a */
 .col-sm-5 img {
   width: 100%;
 }
+.col-sm-4 h5 {
+  padding: 1rem 0 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 1.5rem;
+  text-align: left;
+}
 .col-sm-4 p {
-  padding: 1rem 0;
+  border-bottom: 2px solid var(--Goldenrod);
+}
+.col-sm-4 p a {
+  color: var(--Goldenrod);
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 60%;
+}
+.col-sm-4 p a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 iframe {
   margin-bottom: 1rem;
 }
-
+form {
+  padding-bottom: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+}
 .contacttbl {
   width: 100%;
   text-align: left;
@@ -146,6 +185,7 @@ iframe {
 }
 .clickme {
   margin-top: 0.6rem;
+  padding-top: 0.25rem;
   background: var(--Dkgreen);
   color: white;
   border: 0;
@@ -160,7 +200,7 @@ footer {
   margin-top: 5rem;
   padding-top: 0.5rem;
   text-align: left;
-  border-top: 2px solid var(--Dkgreen);
+  border-top: 2px solid var(--Goldenrod);
 }
 #social img {
   width: 2rem;
@@ -170,8 +210,9 @@ footer {
 #copyright {
   margin-top: 5rem;
   padding-top: 0.5rem;
-  text-align: right;
-  border-top: 2px solid var(--Dkgreen);
+  display: flex;
+  justify-content: right;
+  border-top: 2px solid var(--Goldenrod);
 }
 .svgsocial {
   fill: white;
