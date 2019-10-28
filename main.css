@@ -46,7 +46,7 @@ section {
   display: inline;
   padding: 0.75rem;
 }
-/* TO DO: add a media query to fix navbar on phone screens  */
+/* TO DO: add a media query to fix navbar on phone screens, check to make sure it is responsive on all browsers  */
 .navbar ul li a {
   color: var(--Goldenrod);
   font-family: "Raleway", sans-serif;
