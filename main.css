@@ -1,7 +1,7 @@
 :root {
   background: black;
   margin: 0;
-  --Dkgreen: rgb(45, 87, 67);
+  --Dkgold: #9b7700;
   --Goldenrod: #ffc501;
 }
 
@@ -32,7 +32,6 @@ section {
 }
 
 .stickynav {
-  height: 5vh;
   min-height: 2.6rem;
 }
 
@@ -46,7 +45,6 @@ section {
   display: inline;
   padding: 0.75rem;
 }
-/* TO DO: add a media query to fix navbar on phone screens, check to make sure it is responsive on all browsers  */
 .navbar ul li a {
   color: var(--Goldenrod);
   font-family: "Raleway", sans-serif;
@@ -62,7 +60,7 @@ section {
 
 .donate-btn {
   float: right;
-  background: var(--Dkgreen);
+  background: var(--Dkgold);
   color: white;
   border-radius: 6px;
   padding: 0.15rem 0.7rem;
@@ -186,7 +184,7 @@ form {
 .clickme {
   margin-top: 0.6rem;
   padding-top: 0.25rem;
-  background: var(--Dkgreen);
+  background: var(--Dkgold);
   color: white;
   border: 0;
   border-radius: 6px;
@@ -206,13 +204,6 @@ footer {
   width: 2rem;
   height: 2rem;
   fill: white;
-}
-#copyright {
-  margin-top: 5rem;
-  padding-top: 0.5rem;
-  display: flex;
-  justify-content: right;
-  border-top: 2px solid var(--Goldenrod);
 }
 .svgsocial {
   fill: white;
